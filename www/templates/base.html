@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <a class="header__main">Главная</a>
+        <a class="header__search">Просмотр работ</a>
+        <div>
+        <img class='logo' src="{% static 'img/logo.svg' %}"></div>
+        <div class="header__title">Ремонтный менеджер</div>
+        <div class="header__burger--container">
+            <div class="header__burger"></div>
+            <div class="header__burger"></div>
+            <div class="header__burger"></div>
+        </div>
+        <a class="header__auth">Авторизация</a>
+    </div>
+    <div class="dividing__line"></div>
+</header>
+{% block main %}
+
+{% endblock %}
+</body>
+</html>

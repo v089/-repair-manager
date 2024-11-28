@@ -1,0 +1,31 @@
+body{
+    background: #F3EFEA;
+    display: flex;
+    align-content: center;
+    align-items: center;
+     flex-direction: column;
+}
+a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #323232;
+}
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Tenor Sans", sans-serif;
+  --third-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width : 375px) {
+
+    .body__img--mbl{
+        display: block;
+        width: 375px;
+        height: 506px;
+
+    }
+}
